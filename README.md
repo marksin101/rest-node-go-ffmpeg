@@ -30,7 +30,7 @@ var config = {
 };
 
 #### Create new job
- each job must have input, output and parameter
+ Each job must have input, output and parameter
  input is an array, parameter is an object, output is string
  everything is passed directly to ffmepg when the encoding start
 ####
@@ -52,7 +52,6 @@ This is crucial in that you can only initialize a job using its _id registered i
 var config = {
   method: 'get',
   url: 'localhost:4000/api/job/info',
-  headers: { }
 };
 
 axios(config)
