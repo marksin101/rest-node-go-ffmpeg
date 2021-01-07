@@ -60,7 +60,6 @@ axios(config)
 .then(function (response) {
   console.log(JSON.stringify(response.data));
 })
-axios(config);
 
 #### Start a job / multiple jobs
 This allows you to start a job or multiple jobs at once or sequentially
