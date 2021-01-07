@@ -2,8 +2,8 @@
 Standalone docker app with Restapi for media manipulation using ffmpeg, Go, nodejs, express. Allow easy remote deployment with file upload and download built into the api.
 
 # How to use
-docker build -t . <whatever-name-you-like>:<version>
-docker run -d <whatever-name-you-like>:<version>
+docker build -t . foo:bar
+docker run -d foo:bar
 
 
 This app must be used in conjunction with mongodb. 
@@ -18,7 +18,7 @@ Port could be changed through docker environmental variable -e PORT
 #### Upload file  ####
 
 var data = new FormData();
-data.append('data', fs.createReadStream('<some mediafile>'));
+data.append('data', fs.createReadStream('foo'));
 
 var config = {
   method: 'post',
