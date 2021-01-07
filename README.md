@@ -50,6 +50,7 @@ axios(config);
 #### Get all job info 
 This part allows you to retrieve info and _id of each job.
 This is crucial in that you can only initialize a job using its _id registered in mongodb
+This part also allows you to check the progress of the encoding process  
 ####
 var config = {
   method: 'get',
