@@ -28,6 +28,7 @@ var config = {
   },
   data : data
 };
+axios(config);
 
 #### Create new job
  Each job must have input, output and parameter
@@ -44,6 +45,7 @@ var config = {
   },
   data : data
 };
+axios(config);
 
 #### Get all job info 
 This part allows you to retrieve info and _id of each job.
@@ -58,6 +60,7 @@ axios(config)
 .then(function (response) {
   console.log(JSON.stringify(response.data));
 })
+axios(config);
 
 #### Start a job / multiple jobs
 This allows you to start a job or multiple jobs at once or sequentially
